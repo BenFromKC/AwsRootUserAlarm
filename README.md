@@ -22,9 +22,9 @@ I started by trying to make this as flexible as possible to where it would do th
 
 You can set your variables in your terraform command line, or you can set them directly in vars.tf (while you're in there setting your AWS profile name).
 
-`terraform apply -var 'alert_email=smart-user@example.com'` will build the full stack for your root alerts.
+`terraform apply -var 'user_email=smart-user@example.com'` will build the full stack for your root alerts.
 
- * alert_email - You'll set this to the email address where you want the alerts delivered.
+ * user_email - You'll set this to the email address where you want the alerts delivered.
  * user_sns_topic - set this if you want to use an existing SNS queue rather than create a new one, it needs the name rather than the arn.
  
 ## Final thoughts
